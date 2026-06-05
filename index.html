@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Web Personal de Henry Alvarez Aquije - Desarrollador Web Frontend y Estudiante de Arquitectura de Plataformas y Servicios TI">
+    <meta name="keywords" content="Henry Alvarez, Desarrollador Web, Frontend, HTML5, CSS3, JavaScript, Portafolio, Nazca, Perú">
+    <meta name="author" content="Henry Alvarez Aquije">
+    <title>Henry Alvarez | Desarrollador Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">HA</span>
+                <div class="logo-text">
+                    <span class="logo-name">Henry Alvarez</span>
+                    <span class="logo-subtitle">Desarrollador Web</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo oscuro">
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hola, soy</p>
+                <h1 class="hero-name">Henry <span class="hero-accent">Alvarez</span></h1>
+                <h2 class="hero-title">Desarrollador Web Full Stack</h2>
+                <p class="hero-description">
+                    Apasionado por crear soluciones web modernas, funcionales y centradas en la experiencia del usuario. Siempre aprendiendo, siempre construyendo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/file/d/1vscrlfUdj_uaRXsPq3qtlhpLmtUbe-Lg/view?usp=drive_link" target="_blank" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Descargar CV
+                    </a>
+                    <a href="#proyectos" class="btn btn-outline">Ver mis proyectos</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:henry.alvarez@correo.com" aria-label="Correo" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="assets/img/perfil.png" alt="Henry Alvarez - Desarrollador Web" class="hero-img">
+                    <div class="hero-image-bg"></div>
+                    <div class="hero-code-decor">&lt;/&gt;</div>
+                    <div class="hero-bracket-decor">{ }</div>
+                    <div class="hero-dots-decor">
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-code-lines">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="container">
+            <div class="sobre-mi-card">
+                <div class="sobre-mi-left">
+                    <div class="sobre-mi-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="sobre-mi-text">
+                        <h3 class="sobre-mi-title">SOBRE MÍ</h3>
+                        <p class="sobre-mi-desc">
+                            Soy Docente de Arquitectura de Plataformas y Servicios de TI. en el IES.P Luis Felipe de las Casas Grieve de Marcona; Me especializo en desarrollo web con tecnologías modernas. Disfruto transformar ideas en productos digitales que generen impacto.
+                        </p>
+                        <a href="#contacto" class="sobre-mi-link">
+                            Conoce más
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="sobre-mi-right">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Nombre</span>
+                            <span class="info-value">Henry Alvarez</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Correo</span>
+                            <span class="info-value">halvarez@iestmarcona.edu.pe</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Ubicación</span>
+                            <span class="info-value">Marcona, Perú</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label">Disponibilidad</span>
+                            <span class="info-value">Disponible para proyectos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="habilidades" id="habilidades">
+        <div class="container">
+            <div class="habilidades-header">
+                <div class="habilidades-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <h2 class="habilidades-title">HABILIDADES</h2>
+            </div>
+            <div class="habilidades-grid">
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" viewBox="0 0 512 512">
+                            <path fill="#E34F26" d="M71,460 L30,0 L481,0 L440,460 L255,512 L71,460 Z"/>
+                            <path fill="#EF652A" d="M256,472 L405,431 L440,37 L256,37 Z"/>
+                            <path fill="#EBEBEB" d="M256,208 L181,208 L176,150 L256,150 L256,94 L255,94 L113,94 L115,113 L129,265 L256,265 Z M256,355 L391,355 L392,336 L405,208 L256,208 Z"/>
+                            <path fill="#FFFFFF" d="M256,208 L256,265 L319,265 L315,313 L256,355 L256,414 L372,414 L373,395 L385,336 L391,355 L391,355 L405,208 Z M256,94 L256,129 L256,150 L256,150 L176,150 L177,129 L179,113 L181,94 Z"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">HTML</span>
+                    <span class="skill-percent">90%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" viewBox="0 0 512 512">
+                            <path fill="#1572B6" d="M30,0 L71,460 L255,512 L440,460 L481,0 Z"/>
+                            <path fill="#33A9DC" d="M256,472 L405,431 L440,37 L256,37 Z"/>
+                            <path fill="#EBEBEB" d="M256,208 L181,208 L176,150 L256,150 L256,94 L255,94 L113,94 L115,113 L129,265 L256,265 Z M256,355 L391,355 L392,336 L405,208 L256,208 Z"/>
+                            <path fill="#FFFFFF" d="M256,208 L256,265 L319,265 L315,313 L256,355 L256,414 L372,414 L373,395 L385,336 L391,355 L391,355 L405,208 Z M256,94 L256,129 L256,150 L256,150 L176,150 L177,129 L179,113 L181,94 Z"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">CSS</span>
+                    <span class="skill-percent">85%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" viewBox="0 0 630 630">
+                            <rect width="630" height="630" fill="#F7DF1E"/>
+                            <path d="M423.2,432.6c-0.3,0-0.6,0-0.9,0c-5.8,0-11.6-1.5-16.7-4.3c-11.4-6.3-18.5-18.3-18.5-31.3v-61.5c0-19.7,16-35.7,35.7-35.7s35.7,16,35.7,35.7v40.2c0,4.4,3.6,8,8,8s8-3.6,8-8v-40.2c0-28.5-23.2-51.7-51.7-51.7s-51.7,23.2-51.7,51.7v61.5c0,19.4,10.6,37.2,27.7,46.5c9.1,5,19.5,6.8,29.6,5.1c10.1-1.7,19.3-6.8,26.3-14.4c2.9-3.2,2.7-8.1-0.5-11c-3.2-2.9-8.1-2.7-11,0.5c-4.5,5-10.6,8.3-17.3,9.4C430.7,432.4,426.9,432.6,423.2,432.6z M212.3,432.6c-0.3,0-0.6,0-0.9,0c-5.8,0-11.6-1.5-16.7-4.3c-11.4-6.3-18.5-18.3-18.5-31.3v-61.5c0-19.7,16-35.7,35.7-35.7s35.7,16,35.7,35.7v40.2c0,4.4,3.6,8,8,8s8-3.6,8-8v-40.2c0-28.5-23.2-51.7-51.7-51.7s-51.7,23.2-51.7,51.7v61.5c0,19.4,10.6,37.2,27.7,46.5c9.1,5,19.5,6.8,29.6,5.1c10.1-1.7,19.3-6.8,26.3-14.4c2.9-3.2,2.7-8.1-0.5-11c-3.2-2.9-8.1-2.7-11,0.5c-4.5,5-10.6,8.3-17.3,9.4C219.8,432.4,216,432.6,212.3,432.6z"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">80%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">SQL</span>
+                    <span class="skill-percent">75%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-percent">85%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrapper">
+                        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
+                    <span class="skill-name">VS Code</span>
+                    <span class="skill-percent">90%</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="proyectos" id="proyectos">
+        <div class="container">
+            <div class="proyectos-header">
+                <div class="proyectos-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="proyectos-title">PROYECTOS</h2>
+            </div>
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <div class="proyecto-image">
+                        <img src="assets/img/proyecto1.jpg" alt="Dashboard Admin - Panel de administración">
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-name">Dashboard Admin  </h3>
+                        <p class="proyecto-desc">Panel de administración con gráficos, estadísticas y gestión de menú de opciones.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://terry-alvarez.github.io/ProjectSA10/" target="_blank" class="proyecto-link">
+                            Ver proyecto
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto-card">
+                    <div class="proyecto-image">
+                        <img src="assets/img/proyecto2.jpg" alt="E-commerce Shop - Tienda online">
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-name">E-commerce Shop</h3>
+                        <p class="proyecto-desc">Tienda online con carrito de compras, filtros y pagos simulados.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://terry-alvarez.github.io/OnLineStore/" target="_blank" class="proyecto-link">
+                            Ver proyecto
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto-card">
+                    <div class="proyecto-image">
+                        <img src="assets/img/proyecto3.jpg" alt="Clima App - Aplicación del clima">
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-name">Curso On Line</h3>
+                        <p class="proyecto-desc">Modelo de aula virtual con contenido interactivo y evaluaciones.</p>
+                        <div class="proyecto-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://terry-alvarez.github.io/LearningSA10/" target="_blank" class="proyecto-link">
+                            Ver proyecto
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ESTADÍSTICAS ===================== -->
+    <section class="estadisticas">
+        <div class="container">
+            <div class="estadisticas-grid">
+                <div class="estadistica-item">
+                    <div class="estadistica-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="estadistica-number">15+</div>
+                    <div class="estadistica-label">Proyectos completados</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="estadistica-number">2+</div>
+                    <div class="estadistica-label">Años de aprendizaje</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                    </div>
+                    <div class="estadistica-number">100%</div>
+                    <div class="estadistica-label">Comprometido</div>
+                </div>
+                <div class="estadistica-item">
+                    <div class="estadistica-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="estadistica-number">5+</div>
+                    <div class="estadistica-label">Clientes satisfechos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="contacto-wrapper">
+                <div class="contacto-left">
+                    <div class="contacto-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </div>
+                    <h2 class="contacto-title">CONTACTO</h2>
+                    <p class="contacto-subtitle">¿Tienes un proyecto en mente?</p>
+                    <p class="contacto-desc">Hablemos y trabajemos juntos.</p>
+                </div>
+                <div class="contacto-right">
+                    <div class="contacto-info">
+                        <div class="contacto-info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>halvarez@iestmarcona.edu.pe</span>
+                        </div>
+                        <div class="contacto-info-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>+51 935 194 353</span>
+                        </div>
+                    </div>
+                    <div class="contacto-socials">
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="contacto-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" aria-label="GitHub" class="contacto-social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank" aria-label="Facebook" class="contacto-social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-copy">© 2026 Henry Alvarez. Todos los derechos reservados.</p>
+                <p class="footer-made">Hecho con <span class="heart">♥</span> APSTI - Periodo V</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BOTÓN VOLVER ARRIBA ===================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- ===================== MENSAJE DE BIENVENIDA ===================== -->
+    <div class="welcome-overlay" id="welcomeOverlay">
+        <div class="welcome-message">
+            <h2>Bienvenido a mi Portafolio Web Personal</h2>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
